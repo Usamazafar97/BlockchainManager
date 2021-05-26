@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <LinearLayout
+        android:weightSum="12"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="7"
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="BLOCKCHAIN MANAGER"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:textColor="#FFFF"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:src="@drawable/blockchainnew"
+                android:padding="10dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_weight="9.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <Button
+                android:id="@+id/varify"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_above="@id/add"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_verified_user_24"
+                android:elevation="10dp"
+                android:textSize="20dp" />
+
+            <Button
+                android:background="@drawable/round_camera"
+                android:id="@+id/add"
+                android:textColor="#FFFF"
+                android:layout_gravity="right"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:text="+"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/index"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:hint="Index"/>
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:hint="Amount"/>
+            <Button
+                android:id="@+id/edit"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Edit"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

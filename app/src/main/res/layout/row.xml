@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowww"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/round_corners"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="0dp">
+
+
+                <TextView
+                    android:id="@+id/data"
+                    android:layout_weight="0.75"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:text="Data"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_weight="0.75"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:paddingTop="8dp"
+                    android:text="Date"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/previousHash"
+                android:layout_weight="1.25"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Previous hash"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/currentHash"
+                android:layout_weight="1.25"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:text="Current hash"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

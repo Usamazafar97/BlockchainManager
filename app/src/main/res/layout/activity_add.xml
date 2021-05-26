@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1">
+
+    <RelativeLayout
+        android:id="@+id/upperBox"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="ADD BLOCK"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/upperBox"
+        android:layout_margin="20dp"
+        android:background="@drawable/round_corners"
+        >
+
+        <Button
+            android:id="@+id/addContacts"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:layout_marginBottom="30dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_button"
+            android:text="Add"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_text"
+            android:paddingLeft="20dp"
+            android:hint="Enter Amount"
+            android:textColorHint="#ffff"
+            android:textColor="#FFFF"
+            android:textSize="16dp" />
+
+        <EditText
+
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_text"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:hint="Select Date"
+            android:textColor="#ffff"
+            android:textColorHint="#ffff"
+            android:onClick="onClickDate1"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:imeOptions="actionNext"
+            android:inputType="datetime"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <ImageView
+
+            android:src="@drawable/blockchainnew"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"></ImageView>
+
+    </RelativeLayout>
+</RelativeLayout>
