@@ -6,7 +6,7 @@ Demonstration Video: https://youtu.be/wGIOKGi3F30
 ## Application Flow
 
 ### 1. Splash Screen 
-<img src="https://user-images.githubusercontent.com/34195406/130229246-f242ea43-829a-45da-b441-8aa150232d07.png" width="450" height="600">
+<img src="https://user-images.githubusercontent.com/34195406/130229246-f242ea43-829a-45da-b441-8aa150232d07.png" width="450" height="500">
 
 ### 2. List of Blocks in Blockchain
 The following screen shows the list of blocks that are already present in the blockchain. It also has the option for editing the blocks by giving the index of the block.
